@@ -1,0 +1,65 @@
+body {
+    background: #fafafa;
+    font-family: 'MuseoModerno', cursive;
+  }
+
+  p {
+      font-size:28px;
+      position: static;
+      margin-bottom: 50px;
+      text-align: center;
+  }
+  
+  .dino {
+    position: absolute;
+    bottom: 0;
+    background-image: url("/img/dino.png");
+    width: 60px;
+    height: 60px;
+  }
+  
+  .cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url("/img/cactus.png");
+  }
+  
+  .game-over {
+    text-align: center;
+    color: #666;
+    margin: 170px 0;
+    font-size:10rem;
+  }
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 300px;
+    background-image: url("/img/background.png");
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 180px;
+    
+  }
+
+  #display{
+    color:black;
+    height: 50px;
+    position: fixed;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    
+  }
